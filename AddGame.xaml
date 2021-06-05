@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="FinalAssignment.AddGame"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalAssignment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Black">
+        <StackPanel>
+            <StackPanel.RenderTransform>
+                <CompositeTransform SkewY="0.39" TranslateY="1.493"/>
+            </StackPanel.RenderTransform>
+            <TextBlock Foreground="White" FontSize="25">Enter Game Name:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="game1"/>
+            <TextBlock Foreground="White" FontSize="25">Game Icon URL:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="game2"/>
+            <TextBlock Foreground="White" FontSize="25">Enter Developer Name:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="game3"/>
+            <TextBlock Foreground="White" FontSize="25">Enter Developer Icon URL:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="game4"/>
+            <TextBlock Foreground="White" FontSize="25">Game Blurb:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="game5"/>
+            <Button Foreground="#FF8B8989" Background="#FF5C5252" Margin="150" FontSize="25" Click="Button_Click" >Save Game</Button>
+        </StackPanel>
+    </Grid>
+</Page>

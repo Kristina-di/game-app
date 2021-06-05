@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="FinalAssignment.AddPlayers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalAssignment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Black">
+
+        <StackPanel>
+            <StackPanel.RenderTransform>
+                <CompositeTransform SkewY="0.39" TranslateY="1.493"/>
+            </StackPanel.RenderTransform>
+            <TextBlock Foreground="White" FontSize="25">Enter Player Nickname:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="text1"/>
+            <TextBlock Foreground="White" FontSize="25">Enter Name:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="text2"/>
+            <TextBlock Foreground="White" FontSize="25">Enter Surname:</TextBlock>
+            <TextBox Background=" DarkSlateBlue" Name="text3"/>
+            <Button Foreground="#FF8B8989" Margin="150" FontSize="25" Click="Button_Click" Background="#FF5C5252">Save Player
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Page>
